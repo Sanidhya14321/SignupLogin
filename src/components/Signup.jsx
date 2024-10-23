@@ -29,7 +29,7 @@ function Signup({setIsLoggedIn}) {
     <div className="login-container">
       <div className="lp">
         <img
-          src="src/assets/Signup.webp"
+          src="../src/assets/Signup.webp"
           alt="Person with laptop"
           className="login-image w-96"
         />

@@ -22,7 +22,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
 
   return (
     <nav className='fixed top-0 left-0 w-full z-50'>
-      <div className='flex justify-between items-center mx-auto p-4 md:rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 backdrop-blur-lg'>
+      <div className='flex justify-between items-center mx-auto p-4 md:rounded-xl  backdrop-blur-lg'>
         <Link to="/" className="mx-10 cursor-pointer flex items-center">
           <motion.div variants={iconAnimation} whileHover="hover" initial="rest">
             <BiHome className='size-7 text-white' />

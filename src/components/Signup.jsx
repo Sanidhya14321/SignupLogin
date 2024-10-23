@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import setIsLoggedIn from "../App.jsx"
+import picture from "../assets/Signup.webp"
 
 function Signup({setIsLoggedIn}) {
   const [email, setEmail] = useState('');
@@ -29,7 +30,7 @@ function Signup({setIsLoggedIn}) {
     <div className="login-container">
       <div className="lp">
         <img
-          src="../src/assets/Signup.webp"
+          src={picture}
           alt="Person with laptop"
           className="login-image w-96"
         />

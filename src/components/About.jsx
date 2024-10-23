@@ -54,7 +54,6 @@ const About = () => {
         variants={containerVariants}
       >
         {[
-          { name: "MongoDB", desc: "A NoSQL database used to store user information and other application data." },
           { name: "Express.js", desc: "A web application framework for Node.js that provides a robust set of features." },
           { name: "React.js", desc: "A JavaScript library for building user interfaces." },
           { name: "Node.js", desc: "A JavaScript runtime built on Chrome's V8 engine." },

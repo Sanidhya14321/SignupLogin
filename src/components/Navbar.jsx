@@ -51,7 +51,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
           >
             {isLoggedIn ? <BiLogOut className='size-7 text-white' /> : <BiLogIn className='size-7 text-white' />}
             <span className='ml-2 text-white'>
-              {isLoggedIn ? 'Login' : 'Logout'}
+              {isLoggedIn ? 'Logout' : 'Login'}
             </span>
           </motion.div>
         </Link>

@@ -7,7 +7,6 @@ import Signup from './components/Signup';
 import { auth } from './components/firebase';
 import About from './components/About';
 import Contact from './components/Contact';
-import Layout from './components/Layout';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -28,13 +27,11 @@ const App = () => {
   });
   return (
     <Router>
-      
+      <Navbar/>
       <Routes>
-        <Route element={<Layout/>}>
         <Route path='/signup' element={<Signup setIsLoggedIn={setIsLoggedIn} />} />
         <Route path='/login' element={<Login setIsLoggedIn={setIsLoggedIn} />} />
         <Route path='/' element={<Hero userDetails={userDetails} />} />
-        </Route>
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contact/>} />
       </Routes>
